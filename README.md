@@ -14,6 +14,18 @@
   <img src="https://raw.githubusercontent.com/sobcza11/FedSpeak/main/_assets/FedSpeak.png" width="720">
 </p>
 
+## 🗣️ FedSpeak Status • *Integration Snapshot*
+
+| Component | Status | Notes |
+|----------|--------|-------|
+| **Beige Book** | ✅ **Complete** | Canonical sentences → Topic leaves (LDA/RBL) → Sentiment → R2 |
+| **Fed Statements** | 🟡 **Partial** | Parsing stable; awaiting tone-weight logic + hawk/dove scoring |
+| **FOMC Minutes** | 🟥 **Pending** | Canonical extraction + paragraph segmentation pipeline next |
+| **SEP (Dot Plot)** | 🟡 **Partial** | Template for sentiment + neutral-rate drift defined; not populated yet |
+| **Fed Speeches** | 🟡 **Partial** | Multi-speaker canonical leaf planned; speaker-ID mapping staged |
+| **Fusion into `p_Sentiment_US`** | 🟡 **In Progress** | All Beige outputs + policy leaves flowing to R2; fusion rules pending |
+
+
 FedSpeak extracts structured meaning from every major policy-communication channel:
 ### Beige Book
 District-level tone on:
