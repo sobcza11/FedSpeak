@@ -1,4 +1,19 @@
-# <p align="center">🗣️ FedSpeak • Macro Policy Lab</p>
+# <p align="center">*FedSpeak* • 🗣️ • Policy Signals → Structured Intelligence</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue" />
+  <img src="https://img.shields.io/badge/PMI--CPMAI-Governed_Approach-D4AF37" />
+  <img src="https://img.shields.io/badge/NLP-Policy_Sensitive-4B0082" />
+  <img src="https://img.shields.io/badge/Topic_Modeling-LDA_%7C_RBL-6A5ACD" />
+  <img src="https://img.shields.io/badge/Sentiment-Targeted_Tone-2E8B57" />
+  <img src="https://img.shields.io/badge/MLOps-R2_Mirroring_%7C_Lineage-2F4F4F" />
+  <img src="https://img.shields.io/badge/License-MIT-006400" />
+  <img src="https://img.shields.io/badge/Creative_Commons-CC_BY_4.0-2F4F4F" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sobcza11/FedSpeak/main/_assets/FedSpeak.png" width="720">
+</p>
 
 FedSpeak extracts structured meaning from every major policy-communication channel:
 ### Beige Book
