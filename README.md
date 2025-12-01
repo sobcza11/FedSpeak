@@ -2,8 +2,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue" />
-  <img src="https://img.shields.io/badge/PMI--CPMAI-Governed_Approach-D4AF37" />
-  <img src="https://img.shields.io/badge/NLP-Policy_Sensitive-4B0082" />
+  <img src="https://img.shields.io/badge/PMI–CPMAI-Aligned-D4AF37" />
+  <img src="https://img.shields.io/badge/NLP-PoliSci-4B0082" />
   <img src="https://img.shields.io/badge/Topic_Modeling-LDA_%7C_RBL-6A5ACD" />
   <img src="https://img.shields.io/badge/Sentiment-Targeted_Tone-2E8B57" />
   <img src="https://img.shields.io/badge/MLOps-R2_Mirroring_%7C_Lineage-2F4F4F" />
