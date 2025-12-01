@@ -1,4 +1,4 @@
-<p align="center">🗣️ FedSpeak • Macro Policy Lab</p>
+## <p align="center">🗣️ FedSpeak • Macro Policy Lab</p>
 
 FedSpeak extracts structured meaning from every major policy-communication channel:
 # Beige Book
