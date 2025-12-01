@@ -1,28 +1,28 @@
-## <p align="center">🗣️ FedSpeak • Macro Policy Lab</p>
+# <p align="center">🗣️ FedSpeak • Macro Policy Lab</p>
 
 FedSpeak extracts structured meaning from every major policy-communication channel:
-# Beige Book
+### Beige Book
 District-level tone on:
 - business conditions
 - labor markets
 - wages + compensation
 - prices + supply chains
 
-# FOMC Minutes
+### FOMC Minutes
 - disagreement
 - uncertainty posture
 - inflation vs. growth emphasis
 
-# FOMC Statement
+### FOMC Statement
 - hawkish/dovish shifts
 - forward-guidance direction
 - paragraph-level emphasis
 
-# SEP (Dot Plot) (future tranche)
+### SEP (Dot Plot) (future tranche)
 - rate-path expectations
 - neutral-rate drift
 
-# Fed Speeches (future tranche)
+### Fed Speeches (future tranche)
 - speaker-specific tone
 - drift across governors
 - certainty vs. contingency language
