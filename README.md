@@ -1,7 +1,7 @@
 # <p align="center">🗣️ **FedSpeak** — Policy Signals → Structured Intelligence</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.13.3B-blue" />
+  <img src="https://img.shields.io/badge/Python-3.13.3-blue" />
   <img src="https://img.shields.io/badge/PMI--CPMAI-Governed_Workflow-DAA520" />
   <img src="https://img.shields.io/badge/NLP-Policy_Sensitive-4B0082" />
   <img src="https://img.shields.io/badge/Topic_Modeling-LDA_%7C_RBL-6A5ACD" />
