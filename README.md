@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue" />
-  <img src="https://img.shields.io/badge/PMI–CPMAI-Aligned-D4AF37" />
+  <img src="https://img.shields.io/badge/PMI--CPMAI-Aligned-D4AF37" />
   <img src="https://img.shields.io/badge/NLP-PoliSci-4B0082" />
   <img src="https://img.shields.io/badge/Topic_Modeling-LDA_%7C_RBL-6A5ACD" />
   <img src="https://img.shields.io/badge/Sentiment-Targeted_Tone-2E8B57" />
@@ -14,48 +14,78 @@
   <img src="https://raw.githubusercontent.com/sobcza11/FedSpeak/main/_assets/FedSpeak.png" width="720">
 </p>
 
-## 🗣️ FedSpeak Status • *Integration Snapshot*
+---
+
+**FedSpeak** is a domain-specific *Policy Language Intelligence Engine* that transforms Federal Reserve communication into:
+
+- **Policy-risk signals** — `inflation_risk`, `growth_risk`, `policy_bias`
+- **Regime labels** — `hawkish`, `neutral`, `dovish`, `unknown`
+- **Drift diagnostics** — governed z-score deviations against a baseline
+- **Stability summaries** — quarter-over-quarter tone consistency
+
+FedSpeak serves as the *policy backbone* for:
+
+- **the_Spine** — macro fusion engine  
+- **the_OracleChambers** — interpretive + narrative layer  
+
+FedSpeak supports academic research, RegTech workflows, and supervisory-aligned analysis through **governed, transparent, CPMAI-aligned NLP pipelines**.
+
+---
+
+# 🗣️ Integration Snapshot (Truth-Aligned)
 
 | Component | Status | Notes |
 |----------|--------|-------|
-| **Beige Book** | ✅ **Complete** | Canonical sentences → Topic leaves (LDA/RBL) → Sentiment → R2 |
-| **Fed Statements** | 🟡 **Partial** | Parsing stable; awaiting tone-weight logic + hawk/dove scoring |
-| **FOMC Minutes** | 🟥 **Pending** | Canonical extraction + paragraph segmentation pipeline next |
-| **SEP (Dot Plot)** | 🟡 **Partial** | Template for sentiment + neutral-rate drift defined; not populated yet |
-| **Fed Speeches** | 🟡 **Partial** | Multi-speaker canonical leaf planned; speaker-ID mapping staged |
-| **Fusion into `p_Sentiment_US`** | 🟡 **In Progress** | All Beige outputs + policy leaves flowing to R2; fusion rules pending |
+| **Beige Book** | ✅ **Complete** | Canonical sentences → LDA/RBL topics → sentiment → fused into `combined_policy_leaf` |
+| **Fed Statements** | 🟡 **Partial** | Parsing complete; tone-weighting + hawk/dove logic planned |
+| **FOMC Minutes** | 🟥 **Pending** | Needs ingestion → canonicalization → paragraph segmentation |
+| **SEP (Dot Plot)** | 🟡 **Partial** | Sentiment template + schema drafted; not yet populated |
+| **Fed Speeches** | 🟡 **Partial** | Speaker-ID mapping staged; canonical leaf not yet built |
+| **Fusion into `p_Sentiment_US`** | 🟡 **In Progress** | Beige fully fused; multi-channel fusion ready once remaining leaves exist |
 
+**TRANCHE 1 Universities:**  
+FedSpeak is delivery-ready with full Beige Book pipelines, metadata governance, drift/stability diagnostics, and a validated fusion interface.
 
-FedSpeak extracts structured meaning from every major policy-communication channel:
-### Beige Book
-District-level tone on:
-- business conditions
-- labor markets
-- wages + compensation
-- prices + supply chains
+---
 
-### FOMC Minutes
-- disagreement
-- uncertainty posture
-- inflation vs. growth emphasis
+# 🧠 What FedSpeak Extracts
 
-### FOMC Statement
-- hawkish/dovish shifts
-- forward-guidance direction
-- paragraph-level emphasis
+### **Beige Book**
+Structured tone on:
+- Business conditions  
+- Labor markets  
+- Wages & compensation  
+- Prices & supply chain pressure  
 
-### SEP (Dot Plot) (future tranche)
-- rate-path expectations
-- neutral-rate drift
+### **FOMC Minutes** *(future tranche)*
+- Committee disagreement  
+- Risk balance (inflation vs. growth)  
+- Uncertainty structure  
 
-### Fed Speeches (future tranche)
-- speaker-specific tone
-- drift across governors
-- certainty vs. contingency language
+### **FOMC Statement**
+- Hawkish/dovish posture  
+- Forward-guidance shifts  
+- Paragraph-level emphasis  
 
-Outputs feed downstream into `p_FedSpeak_US`, directly integrated into the_Spine and the_OracleChambers.
+### **SEP (Dot Plot)** *(future tranche)*
+- Rate-path sentiment  
+- Neutral-rate drift detection  
 
-<p align="center">📦 Repository Structure</p>
+### **Fed Speeches** *(future tranche)*
+- Governor-specific tone  
+- Conviction & uncertainty  
+- Drift over time  
+
+Outputs integrate into:
+- `p_FedSpeak_US`
+- `p_Sentiment_US`
+- the_Spine (macro fusion)
+- the_OracleChambers (interpretation layer)
+
+---
+
+# 📦 Repository Structure
+
 fed_speak/
 ├── inputs/                   # Scraping / ingestion
 ├── preprocess/               # Canonical sentences
@@ -65,92 +95,31 @@ fed_speak/
 ├── utils/                    # R2 upload + general utilities
 └── run_tranche1_pipeline.py  # Full BeigeBook → Policy Leaf pipeline
 
-<p align="center">🧠 Key Outputs</p>
-File	Description
-canonical_sentences.parquet	Cleaned, structured linguistic units
-sentiment_scores.parquet	Targeted tone scoring
-beige_topics.parquet	LDA topic distributions
-beige_topics_rbl.parquet	RBL topic slices (high interpretability)
-combined_policy_leaf.parquet	Final fused policy signal
+---
 
-These artifacts enable:
+# 🧠 Key Outputs
 
-macro-state fusion
+| File | Description |
+|------|-------------|
+| `canonical_sentences.parquet` | Cleaned, structured policy-relevant units |
+| `sentiment_scores.parquet` | Fed-adjusted sentiment values |
+| `beige_topics.parquet` | LDA topic distributions |
+| `beige_topics_rbl.parquet` | Top-slice RBL (interpretable topics) |
+| `combined_policy_leaf.parquet` | Final policy-risk leaf (∈ [-1, 1]) |
 
-policy-drift narratives
+These artifacts support:
+- Macro-state fusion  
+- Policy-drift narratives  
+- Risk diagnostics  
+- Scenario commentary  
+- Cross-asset interpretation  
 
-scenario commentary
+---
 
-cross-asset interpretation
+# ⚙️ Usage
 
-explainable macro pipelines
-
-<p align="center">⚙️ Usage</p>
-Run full Beige Book → Policy Leaf pipeline
+### Run the full Beige Book → Policy Leaf pipeline
+```bash
 python -m fed_speak.run_tranche1_pipeline
 
-Upload all processed outputs to Cloudflare R2
-python -m fed_speak.utils.backfill_r2
-
-Prepare multi-channel leaf (future)
-python -m fed_speak.leaves.fed_multichannel_leaf
-
-<p align="center">🔒 R2 Configuration</p>
-
-Set environment variables:
-
-PowerShell
-
-$env:R2_ACCESS_KEY_ID="YOUR_KEY"
-$env:R2_SECRET_ACCESS_KEY="YOUR_SECRET"
-
-
-Bash
-
-export R2_ACCESS_KEY_ID="YOUR_KEY"
-export R2_SECRET_ACCESS_KEY="YOUR_SECRET"
-
-
-R2 mirroring ensures lineage, availability, and reproducibility across the entire macro stack.
-
-<p align="center">🔮 CPMAI Alignment</p>
-
-FedSpeak follows the CPMAI model used across your ecosystem:
-
-Phase I — policy domain understanding
-
-Phase II — data governance + exploration
-
-Phase III — modeling (LDA, RBL, sentiment)
-
-Phase IV — validation + lineage
-
-Phase V — deployment (R2 mirroring)
-
-Phase VI — monitoring + drift evaluation
-
-<p align="center">🧭 Roadmap</p>
-Tranche II
-
-FOMC Minutes ingestion
-
-Multi-speaker drift
-
-SEP tone extraction
-
-Tranche III
-
-Hawk–Dove Index
-
-Forward-guidance classification
-
-Tranche IV
-
-Real-time Fed drift monitor
-
-Cross-asset reaction overlays
-
-Expansion: ECB, BoE, BoJ
-[Return](https://github.com/sobcza11/the_Spine/tree/main)
-
-<p align="right">***🧠 the_Spine •*** [Return](https://github.com/sobcza11/the_Spine/tree/main)</p>
+<p align="right">🧠 the_Spine •</p>[Return](https://github.com/sobcza11/the_Spine/tree/main)
