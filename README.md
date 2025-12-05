@@ -85,7 +85,7 @@ Outputs integrate into:
 ---
 
 # 📦 Repository Structure
-
+```text
 fed_speak/
 ├── inputs/                   # Scraping / ingestion
 ├── preprocess/               # Canonical sentences
@@ -94,7 +94,7 @@ fed_speak/
 ├── leaves/                   # Policy leaf fusion (final signal)
 ├── utils/                    # R2 upload + general utilities
 └── run_tranche1_pipeline.py  # Full BeigeBook → Policy Leaf pipeline
-
+```
 ---
 
 # 🧠 Key Outputs
