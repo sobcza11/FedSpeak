@@ -23,7 +23,6 @@
 **Federal Reserve communication**—Beige Book, FOMC Statements, Minutes—into structured signals suitable for:
 
 - **Macro fusion systems** (e.g., the_Spine)  
-- **Research workflows** across Cambridge, Oxford, MIT, Cornell, Imperial, NUS, UCL  
 - **RegTech, FinTech, and supervisory analytics**  
 - **Policy-drift and uncertainty diagnostics**  
 - **Scenario-aware macro narrative engines**
