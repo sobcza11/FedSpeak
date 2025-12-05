@@ -6,7 +6,6 @@
   <img src="https://img.shields.io/badge/NLP-Policy_Sensitive-4B0082" />
   <img src="https://img.shields.io/badge/Topic_Modeling-LDA_%7C_RBL-6A5ACD" />
   <img src="https://img.shields.io/badge/DataLineage-R2_Compliant-556B2F" />
-  <img src="https://img.shields.io/badge/Universities-Cambridge_%7C_Oxford_%7C_MIT_%7C_Cornell-2E2B5F" />
   <img src="https://img.shields.io/badge/License-CC_BY_4.0-2F4F4F" />
 </p>
 
