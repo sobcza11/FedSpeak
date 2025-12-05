@@ -11,6 +11,12 @@
 
 ---
 
+<p align="center">
+  <img src="https://github.com/sobcza11/FedSpeak/blob/main/_assets/FedSpeak.png" width="720">
+</p>
+
+---
+
 ## 📘 **Overview**
 
 **FedSpeak** is a governed, CPMAI-aligned *Policy Language Intelligence Engine* that transforms  
