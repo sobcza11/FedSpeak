@@ -152,5 +152,5 @@ Cross-asset reaction overlays
 
 Expansion: ECB, BoE, BoJ
 
-<p align="right">🧠 the_Spine • Return
+<p align="right">🧠 the_Spine • [Return](https://github.com/sobcza11/the_Spine)
 </p>
