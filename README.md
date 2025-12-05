@@ -70,6 +70,9 @@ Uses fused signals to generate regime probabilities:
 - No external APIs required  
 
 ---
+### <p align="right">***🧠 the_Spine •*** [Return](https://github.com/sobcza11/the_Spine/tree/main)</p>
+
+---
 
 ## 📦 **Repository Structure**
 
@@ -117,7 +120,3 @@ These artifacts support:
 ```bash
 python -m fed_speak.run_tranche1_pipeline
 
----
-### <p align="right">***🧠 the_Spine •*** [Return](https://github.com/sobcza11/the_Spine/tree/main)</p>
-
----
